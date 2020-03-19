@@ -7,14 +7,15 @@ const PORT = process.env.PORT || 2500;
 const app = express();
 
 app.use(bodyParser.json());
+
 app.use("/", require("./middleware/request_parser"));
-console.log(PORT);
+
 app.post("/", (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    rp(req.body.options).then(function (response) {
+    rp(req.body.options).then((response) => {
         res.json(response);
     })
-        .catch(function (err) {
+        .catch((err) => {
             res.json(err);
         });
 
