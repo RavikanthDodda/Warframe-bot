@@ -6,13 +6,13 @@ const getResponse = (items, itemName, type = "default", callback) => {
     if (item) {
         delete item.patchlogs;
         let simpleResponse = `Here are the details of ${item.name}`;
-        googleResponse.getTable(item, type, simpleResponse, function (tableResponse) {
+        googleResponse.getTable(item, type, simpleResponse, tableResponse => {
             callback(tableResponse);
         });
 
     }
     else {
-        googleResponse.getError("No such item", function (errorResponse) {
+        googleResponse.getError("No such item", errorResponse => {
             callback(errorResponse);
         })
     }
