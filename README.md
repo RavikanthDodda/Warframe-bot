@@ -1,6 +1,6 @@
 # Warframe bot
 
-Foobar is a Google assistant chat-bot built using Dialogflow and Node.js.
+A Google assistant chat-bot built using Dialogflow and Node.js.
 
 ## Details
 
