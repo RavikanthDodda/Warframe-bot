@@ -10,7 +10,7 @@
   "author": "ravi",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "warframe-items": "^1.422.0"
   },
   "devDependencies": {
